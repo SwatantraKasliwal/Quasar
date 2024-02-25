@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Tilt Neon', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.content{
+    color: rgb(80, 80, 80);
+    position: absolute;
+    transform: translateX(700%);
+    transition: 0.3s;
+}
+
+.content h2{
+    text-decoration: dotted;
+    justify-content: center;
+    text-align: center;
+}
+.introduction{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 30px;
+}
+.tabs{
+    margin-top: 10px;
+    margin-left: 13px;
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+}
+.tabs:hover{
+    color: red;
+}
+#introduction{
+ margin-top: 10px;
+ transform: translateX(5px);
+ padding: 10px;
+}
+#introduction p{
+ font-size: 12px;
+}
+#introduction ul{
+    margin-top: 5px;
+    font-size: 12px;
+}
+#list_of_experiments{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   text-decoration: none;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   margin-left: 35px;
+}
+.cards{
+    display: flexbox;
+    height: 150px;
+    width: 150px;
+    gap: 10rem;
+    background: none;
+    border: none;
+    text-decoration: none;
+    justify-content: center;
+   text-align: center;
+   align-items: center;
+}
+.cardset1{
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    text-align: center;
+    justify-content: center;
+   text-align: center;
+   align-items: center;
+}
+.cardsetlogo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+}
+.cardName{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: -50px;
+}
+#study_material{
+    margin-top: 10px;
+}
+#study_material p{
+    font-size: 12px;
+}
+#feedback{
+    margin-top: 10px;
+}
+#feedback p{
+    font-size: 12px;
+}
+#btn1{
+    color:red;
+}
+
+/* Stack Portion */
+.stack_content{
+    color: rgb(255, 72, 0);
+    transform: translateX(200%);
+    transition: 0.3s;
+    position: absolute;
+}
+.stackimage{
+height: 25vw;
+width: 50vw;
+margin-left: 23vw;
+}
+
+/* Queue Portion */
+
+.queue_content{
+    color: rgb(255, 72, 0);
+    transform: translateX(200%);
+    transition: 0.3s;
+    position: absolute;
+}
+
+/* Bfs Portion */
+.bfs_content{
+    color: rgb(255, 72, 0);
+    transform: translateX(200%);
+    transition: 0.3s;
+    position: absolute;
+}
+
+/*Theory Portion CSS  */
+#theory{
+    margin-top: 7px;
+    transform: translateX(2px);
+    padding: 10px;
+}
+.heading{
+       text-align: center;
+       font-size: 4vw;
+       padding: 5px;
+}
+.heading1{
+       margin-top: 1vw;
+       font-size: 2.5vw;
+       padding: 5px;
+}
+.heading2{
+       margin-top: 1vw;
+       font-size: 2.5vw;
+       color: #f44336;
+       padding: 5px;
+}
+.para{
+    color: black;
+    font-size: 1.2vw;
+    text-align: justify;
+    font-family: 'Signika Negative', sans-serif;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    padding: 5px;
+}
+
+
+/* bst */
+.bstimg{
+       height: 25vw;
+       width: 45vw;
+
+}
+/* queue */
+.queueimg{
+       height: 25vw;
+       width: 50vw;
+       margin-left: 23vw;
+}
+.queueimage{
+    height: 25vw;
+    width: 50vw;
+    margin-left: 23vw;
+    }
+/* btree */
+.btreeimg{
+       height: 25vw;
+margin-left: 23vw;     
+width: 50vw;
+}
+
+/* avl */
+.avlimg{
+       height: 25vw;
+       width: 50vw;
+       margin-left: 23vw;
+}
+/* bfs */
+.bfsimg{
+       height: 25vw;
+       width: 30vw;
+       margin-left: 30vw; 
+}
+/* dfs   */
+.dfsimg{
+       height: 25vw;
+       width: 30vw;
+       margin-left: 23vw;
+}
