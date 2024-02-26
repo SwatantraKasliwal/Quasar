@@ -3,6 +3,7 @@ var intro = document.querySelector("#introduction");
 var loe = document.querySelector("#list_of_experiments");
 var sm = document.querySelector("#study_material");
 var feed = document.querySelector("#feedback");
+var lang = document.querySelector("#language");
 var btn1 = document.querySelector("#btn1");
 var btn2 = document.querySelector("#btn2");
 var btn3 = document.querySelector("#btn3");
@@ -18,9 +19,10 @@ var visualbtn3 = document.querySelector("#visualbtn3");
 
 function openListOfExp(){
     loe.style.transform  = "translateX(5px)";
-    intro.style.transform  = "translateX(140%)";
-    sm.style.transform  = "translateX(140%)";
-    feed.style.transform  = "translateX(140%)";
+    intro.style.transform  = "translateX(2000%)";
+    sm.style.transform  = "translateX(2000%)";
+    feed.style.transform  = "translateX(2000%)";
+    lang.style.transform  = "translateX(2000%)";
     btn1.style.color = "red";
     btn2.style.color = "black";
     btn3.style.color = "black";
@@ -29,12 +31,14 @@ function openListOfExp(){
     sm.style.transitionDelay  = "0s";
     intro.style.transitionDelay  = "0s";
     feed.style.transitionDelay  = "0s";
+    lang.style.transitionDelay  = "0s";
 }
 function openStudyMaterial(){
-    sm.style.transform  = "translateX(10px)";
+    sm.style.transform  = "translateX(20px)";
     loe.style.transform  = "translateX(2000%)";
-    intro.style.transform  = "translateX(140%)";
-    feed.style.transform  = "translateX(140%)";
+    intro.style.transform  = "translateX(2000%)";
+    feed.style.transform  = "translateX(2000%)";
+    lang.style.transform  = "translateX(2000%)";
     btn2.style.color = "red";
     btn3.style.color = "black";
     btn1.style.color = "black";
@@ -43,27 +47,31 @@ function openStudyMaterial(){
     loe.style.transitionDelay  = "0s";
     intro.style.transitionDelay  = "0s";
     feed.style.transitionDelay  = "0s";
+    lang.style.transitionDelay  = "0s";
 }
 
 function openLanguages(){
-    sm.style.transform  = "translateX(10px)";
+    lang.style.transform  = "translateX(10px)";
+    sm.style.transform  = "translateX(2000%)";
     loe.style.transform  = "translateX(2000%)";
-    intro.style.transform  = "translateX(140%)";
-    feed.style.transform  = "translateX(140%)";
-    btn2.style.color = "red";
-    btn3.style.color = "black";
+    intro.style.transform  = "translateX(2000%)";
+    feed.style.transform  = "translateX(2000%)";
+    btn3.style.color = "red";
+    btn2.style.color = "black";
     btn1.style.color = "black";
     btn4.style.color = "black";
-    sm.style.transitionDelay  = "0.3s";
+    lang.style.transitionDelay  = "0.3s";
     loe.style.transitionDelay  = "0s";
+    sm.style.transitionDelay  = "0s";
     intro.style.transitionDelay  = "0s";
     feed.style.transitionDelay  = "0s";
 }
 function openFeedback(){
     feed.style.transform  = "translateX(10px)";
     loe.style.transform  = "translateX(2000%)";
-    sm.style.transform  = "translateX(140%)";
-    intro.style.transform  = "translateX(140%)";
+    lang.style.transform  = "translateX(2000%)";
+    sm.style.transform  = "translateX(2000%)";
+    intro.style.transform  = "translateX(2000%)";
     btn4.style.color = "red";
     btn2.style.color = "black";
     btn3.style.color = "black";
@@ -72,6 +80,8 @@ function openFeedback(){
     loe.style.transitionDelay  = "0s";
     intro.style.transitionDelay  = "0s";
     sm.style.transitionDelay  = "0s";
+    lang.style.transitionDelay  = "0s";
+
 }
 
 function openTheory(){

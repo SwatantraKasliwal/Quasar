@@ -50,6 +50,8 @@ body{
     margin-top: 5px;
     font-size: 12px;
 }
+
+/* List of Experiment Portion */
 #list_of_experiments{
     margin-top: 5px;
     display: flex;
@@ -105,12 +107,16 @@ body{
     align-items: center;
     margin-left: -50px;
 }
+
+/* Practise Portion  */
 #study_material{
     margin-top: 10px;
 }
 #study_material p{
     font-size: 12px;
 }
+
+/* Feedback Portion */
 #feedback{
     margin-top: 10px;
 }
