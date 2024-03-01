@@ -115,6 +115,17 @@ body{
 #study_material p{
     font-size: 12px;
 }
+.practise_content{
+    color: rgb(80, 80, 80);
+    position: absolute;
+    transform: translateX(2500%);
+    transition: 0.3s;
+}
+#array_content{
+    margin-top: 10px;
+    transform: translateX(5px);
+    padding: 10px; 
+}
 
 /* Feedback Portion */
 #feedback{

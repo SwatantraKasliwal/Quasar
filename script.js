@@ -118,4 +118,92 @@ function openVisualisation(){
     code.style.transitionDelay  = "0s";
 }
 
+// Practise Portion:
+var array = document.querySelector("#array_content");
+var string = document.querySelector("#string_content");
+var linkedlist = document.querySelector("#linkedlist_content");
+var stacknqueue = document.querySelector("#stackandqueue_content");
+var tree = document.querySelector("#tree_content");
+var trie = document.querySelector("#trie_content");
+var heap = document.querySelector("#heap_content");
+var graph = document.querySelector("#graph_content");
+var dynamic = document.querySelector("#dynamic_content");
+var bitmanipulation = document.querySelector("#bitmanipulation_content");
+var qbtn1 = document.querySelector("#qbtn1");
+var qbtn2 = document.querySelector("#qbtn2");
+var qbtn3 = document.querySelector("#qbtn3");
+var qbtn4 = document.querySelector("#qbtn4");
+var qbtn5 = document.querySelector("#qbtn5");
+var qbtn6 = document.querySelector("#qbtn6");
+var qbtn7 = document.querySelector("#qbtn7");
+var qbtn8 = document.querySelector("#qbtn8");
+var qbtn9 = document.querySelector("#qbtn9");
+var qbtn10 = document.querySelector("#qbtn10");
+
+function openArray(){
+    array.style.transform = "transformX(5px)";
+    string.style.transform = "transformX(100%)";
+    linkedlist.style.transform = "transformX(100%)";
+    stacknqueue.style.transform = "transformX(100%)";
+    tree.style.transform = "transformX(100%)";
+    trie.style.transform = "transformX(100%)";
+    heap.style.transform = "transformX(100%)";
+    graph.style.transform = "transformX(100%)";
+    dynamic.style.transform = "transformX(100%)";
+    bitmanipulation.style.transform = "transformX(100%)";
+    array.style.transitionDelay = "0.3s";
+    string.style.transitionDelay = "0s";
+    linkedlist.style.transitionDelay = "0s";
+    stacknqueue.style.transitionDelay = "0s";
+    tree.style.transitionDelay = "0s";
+    trie.style.transitionDelay = "0s";
+    heap.style.transitionDelay = "0s";
+    heap.style.transitionDelay = "0s";
+    graph.style.transitionDelay = "0s";
+    dynamic.style.transitionDelay = "0s";
+    bitmanipulation.style.transitionDelay = "0s";
+    qbtn1.style.color = "red";
+    qbtn2.style.color = "black";
+    qbtn3.style.color = "black";
+    qbtn4.style.color = "black";
+    qbtn5.style.color = "black";
+    qbtn6.style.color = "black";
+    qbtn7.style.color = "black";
+    qbtn8.style.color = "black";
+    qbtn9.style.color = "black";
+    qbtn10.style.color = "black";
+}
+function openString(){
+    string.style.transform = "transformX(5px)";
+    array.style.transform = "transformX(2000%)";
+    linkedlist.style.transform = "transformX(100%)";
+    stacknqueue.style.transform = "transformX(100%)";
+    tree.style.transform = "transformX(100%)";
+    trie.style.transform = "transformX(100%)";
+    heap.style.transform = "transformX(100%)";
+    graph.style.transform = "transformX(100%)";
+    dynamic.style.transform = "transformX(100%)";
+    bitmanipulation.style.transform = "transformX(100%)";
+    string.style.transitionDelay = "0.3s";
+    array.style.transitionDelay = "0s";
+    linkedlist.style.transitionDelay = "0s";
+    stacknqueue.style.transitionDelay = "0s";
+    tree.style.transitionDelay = "0s";
+    trie.style.transitionDelay = "0s";
+    heap.style.transitionDelay = "0s";
+    heap.style.transitionDelay = "0s";
+    graph.style.transitionDelay = "0s";
+    dynamic.style.transitionDelay = "0s";
+    bitmanipulation.style.transitionDelay = "0s";
+    qbtn2.style.color = "red";
+    qbtn1.style.color = "black";
+    qbtn3.style.color = "black";
+    qbtn4.style.color = "black";
+    qbtn5.style.color = "black";
+    qbtn6.style.color = "black";
+    qbtn7.style.color = "black";
+    qbtn8.style.color = "black";
+    qbtn9.style.color = "black";
+    qbtn10.style.color = "black";
+}
 
