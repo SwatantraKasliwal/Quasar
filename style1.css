@@ -118,13 +118,14 @@ body{
 .practise_content{
     color: rgb(80, 80, 80);
     position: absolute;
-    transform: translateX(2500%);
+    transform: translateX(5000%);
     transition: 0.3s;
 }
 #array_content{
     margin-top: 10px;
     transform: translateX(5px);
-    padding: 10px; 
+    padding: 10px;
+    display: flex; 
 }
 
 /* Feedback Portion */
