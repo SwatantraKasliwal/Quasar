@@ -120,12 +120,14 @@ body{
     position: absolute;
     transform: translateX(5000%);
     transition: 0.3s;
+    justify-content: left;
 }
 #array_content{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     transform: translateX(5px);
     padding: 10px;
-    display: flex; 
+    justify-content: left;
+    /* display: flex;  */
 }
 
 /* Feedback Portion */
