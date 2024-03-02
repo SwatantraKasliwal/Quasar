@@ -62,7 +62,7 @@
         </div>
     </div>
     <div id="study_material" class="content">
-        <div class="questions">
+        <!-- <div class="questions"> -->
             <button id="qbtn1" class="tabs" onclick="openArray()">Array</button>
             <button id="qbtn2" class="tabs" onclick="openString()">String</button>
             <button id="qbtn3" class="tabs" onclick="openLinkedList()">Linked-List</button>
@@ -73,7 +73,7 @@
             <button id="qbtn8" class="tabs" onclick="openGraph()">Graph</button>
             <button id="qbtn9" class="tabs" onclick="openDynamicProgramming()">Dynamic Programming</button>
             <button id="qbtn10" class="tabs" onclick="openBitManipulation()">Bit Manipulation</button>
-        </div>
+        <!-- </div> -->
 <div id="array_content" class="practise_content">
     <ol>
         <li><a href="https://leetcode.com/problems/two-sum/">Check if pair with the given Sum exists in Array</a> - <span style="color:green">🟢 Easy</span></li>
@@ -218,16 +218,33 @@
     </div>
     <div id="language" class="content">
         <h2>Language</h2>
-        <h4>Choose the prffered Language</h4>
-        <a href="https://trinket.io/embed/java/d25748afb6"><button>Java</button></a>
+        <div class="cardset1">
+            <a href="https://trinket.io/embed/java/d25748afb6" class="cards"><img src="dsa_virtual_image/javaLogo.png" alt="JAVA" class="cardsetlogo"><p class="cardName">Java</p> </a>
+            <a href="stack.html" class="cards"><img src="dsa_virtual_image/treelogo.png" alt="BST logo" class="cardsetlogo"><p class="cardName">BST</p></a>
+            <a href="avl.html" class="cards"><img src="dsa_virtual_image/treelogo.png" alt="AVL Tree logo" class="cardsetlogo"><p class="cardName">AVL Tree</p></a>
+            <a href="stack.html" class="cards"><img src="dsa_virtual_image/treelogo.png" alt="B-Tree logo" class="cardsetlogo"><p class="cardName">B-Tree</p></a>
+            <a href="stack.html" class="cards"><img src="dsa_virtual_image/treelogo.png" alt="B+Tree logo" class="cardsetlogo"><p class="cardName">B+Tree</p></a>
+        </div>
     </div>
     <div id="feedback" class="content">
-        <h2>Feedback</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime suscipit veritatis ipsa dolores commodi
-            recusandae ex fugiat voluptas voluptates porro eaque cum, qui quasi animi magni perferendis quisquam error
-            a! Debitis magnam eligendi illo accusantium corporis.
-        </p>
+        <div>
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            
+              <input type="submit" value="Submit">
+            </form>
+          </div>
     </div>
 </div>
     <script src="script.js"></script>
