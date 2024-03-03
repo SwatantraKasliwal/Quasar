@@ -1,32 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     font-family: 'Tilt Neon', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     overflow-x: hidden;
+    /* overflow-y: hidden; */
 }
-.content{
+
+.content {
     color: rgb(80, 80, 80);
     position: absolute;
     transform: translateX(700%);
     transition: 0.3s;
 }
 
-.content h2{
+.content h2 {
     text-decoration: dotted;
     justify-content: center;
     text-align: center;
 }
-.introduction{
+
+.introduction {
     display: flex;
     gap: 0.5rem;
     font-size: 30px;
 }
-.tabs{
+
+.tabs {
     margin-top: 10px;
     margin-left: 13px;
     background: transparent;
@@ -35,41 +42,47 @@ body{
     font-size: 16px;
     text-decoration: none;
 }
-.tabs:hover{
+
+.tabs:hover {
     color: red;
 }
-#introduction{
- margin-top: 10px;
- transform: translateX(5px);
- padding: 10px;
+
+#introduction {
+    margin-top: 10px;
+    transform: translateX(5px);
+    padding: 10px;
 }
-#introduction p{
- font-size: 12px;
+
+#introduction p {
+    font-size: 12px;
 }
-#introduction ul{
+
+#introduction ul {
     margin-top: 5px;
     font-size: 12px;
 }
 
 /* List of Experiment Portion */
-#list_of_experiments{
+#list_of_experiments {
     margin-top: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 300px;
 }
 
-#cards{
+#cards {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-   text-decoration: none;
-   justify-content: center;
-   text-align: center;
-   align-items: center;
-   margin-left: 35px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 35px;
 }
-.cards{
+
+.cards {
     display: flexbox;
     height: 150px;
     width: 150px;
@@ -78,19 +91,21 @@ body{
     border: none;
     text-decoration: none;
     justify-content: center;
-   text-align: center;
-   align-items: center;
+    text-align: center;
+    align-items: center;
 }
-.cardset1{
+
+.cardset1 {
     display: flex;
     flex-direction: row;
     gap: 8rem;
     text-align: center;
     justify-content: center;
-   text-align: center;
-   align-items: center;
+    text-align: center;
+    align-items: center;
 }
-.cardsetlogo{
+
+.cardsetlogo {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -100,7 +115,8 @@ body{
     height: 100px;
     width: 100px;
 }
-.cardName{
+
+.cardName {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -108,42 +124,54 @@ body{
     margin-left: -50px;
 }
 
+.cardset1 :hover {
+    box-shadow: #ccc;
+    opacity: 0.5;
+}
+
 /* Practise Portion  */
-#study_material{
+#study_material {
     margin-top: 10px;
 }
-#study_material p{
+
+#study_material p {
     font-size: 12px;
 }
-.practise_content{
+
+.practise_content {
     color: rgb(80, 80, 80);
     position: absolute;
     transform: translateX(5000%);
     transition: 0.3s;
     justify-content: left;
 }
-#array_content{
+
+#array_content {
     /* margin-top: 10px; */
     transform: translateX(5px);
     padding: 10px;
     justify-content: left;
     /* display: flex;  */
 }
-.questions{
+
+.questions {
     margin-left: -10px;
 }
-
 /* Feedback Portion */
-#feedback{
+#feedback {
     margin-top: 10px;
 }
-#feedback p{
+
+#feedback p {
     font-size: 12px;
 }
-#btn1{
-    color:red;
+
+#btn1 {
+    color: red;
 }
-input[type=text], select {
+
+input[type=text],
+select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -151,9 +179,9 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
     color: white;
@@ -162,33 +190,35 @@ input[type=text], select {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: #45a049;
-  }
-  
-   #feedback div{
+}
+
+#feedback div {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-  }
+}
 
 /* Stack Portion */
-.stack_content{
+.stack_content {
     color: rgb(255, 72, 0);
     transform: translateX(200%);
     transition: 0.3s;
     position: absolute;
 }
-.stackimage{
-height: 25vw;
-width: 50vw;
-margin-left: 23vw;
+
+.stackimage {
+    height: 25vw;
+    width: 50vw;
+    margin-left: 23vw;
 }
 
 /* Queue Portion */
 
-.queue_content{
+.queue_content {
     color: rgb(255, 72, 0);
     transform: translateX(200%);
     transition: 0.3s;
@@ -196,7 +226,7 @@ margin-left: 23vw;
 }
 
 /* Bfs Portion */
-.bfs_content{
+.bfs_content {
     color: rgb(255, 72, 0);
     transform: translateX(200%);
     transition: 0.3s;
@@ -204,28 +234,32 @@ margin-left: 23vw;
 }
 
 /*Theory Portion CSS  */
-#theory{
+#theory {
     margin-top: 7px;
     transform: translateX(2px);
     padding: 10px;
 }
-.heading{
-       text-align: center;
-       font-size: 4vw;
-       padding: 5px;
+
+.heading {
+    text-align: center;
+    font-size: 4vw;
+    padding: 5px;
 }
-.heading1{
-       margin-top: 1vw;
-       font-size: 2.5vw;
-       padding: 5px;
+
+.heading1 {
+    margin-top: 1vw;
+    font-size: 2.5vw;
+    padding: 5px;
 }
-.heading2{
-       margin-top: 1vw;
-       font-size: 2.5vw;
-       color: #f44336;
-       padding: 5px;
+
+.heading2 {
+    margin-top: 1vw;
+    font-size: 2.5vw;
+    color: #f44336;
+    padding: 5px;
 }
-.para{
+
+.para {
     color: black;
     font-size: 1.2vw;
     text-align: justify;
@@ -237,44 +271,49 @@ margin-left: 23vw;
 
 
 /* bst */
-.bstimg{
-       height: 25vw;
-       width: 45vw;
+.bstimg {
+    height: 25vw;
+    width: 45vw;
 
 }
+
 /* queue */
-.queueimg{
-       height: 25vw;
-       width: 50vw;
-       margin-left: 23vw;
-}
-.queueimage{
+.queueimg {
     height: 25vw;
     width: 50vw;
     margin-left: 23vw;
-    }
+}
+
+.queueimage {
+    height: 25vw;
+    width: 50vw;
+    margin-left: 23vw;
+}
+
 /* btree */
-.btreeimg{
-       height: 25vw;
-margin-left: 23vw;     
-width: 50vw;
+.btreeimg {
+    height: 25vw;
+    margin-left: 23vw;
+    width: 50vw;
 }
 
 /* avl */
-.avlimg{
-       height: 25vw;
-       width: 50vw;
-       margin-left: 23vw;
+.avlimg {
+    height: 25vw;
+    width: 50vw;
+    margin-left: 23vw;
 }
+
 /* bfs */
-.bfsimg{
-       height: 25vw;
-       width: 30vw;
-       margin-left: 30vw; 
+.bfsimg {
+    height: 25vw;
+    width: 30vw;
+    margin-left: 30vw;
 }
+
 /* dfs   */
-.dfsimg{
-       height: 25vw;
-       width: 30vw;
-       margin-left: 23vw;
+.dfsimg {
+    height: 25vw;
+    width: 30vw;
+    margin-left: 23vw;
 }
