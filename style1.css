@@ -127,6 +127,8 @@ body {
 .cardset1 :hover {
     box-shadow: #ccc;
     opacity: 0.5;
+    border-radius: 20px;
+    /* border: 2px solid black ; */
 }
 
 /* Practise Portion  */

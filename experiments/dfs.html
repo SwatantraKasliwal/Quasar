@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>BST</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>DFS</title>
+    <link rel="stylesheet" href="../style1.css">
     <link rel="stylesheet" href="prism.css">
     <!-- css sheet for how the page is laid out -->
   
@@ -33,7 +33,7 @@
   <script type="text/javascript" src="AnimationLibrary/AnimationMain.js"> </script>
 
   <script type="text/javascript" src="AlgorithmLibrary/Algorithm.js"> </script>
-  <script type="text/javascript" src="AlgorithmLibrary/BFS.js"> </script>
+  <script type="text/javascript" src="AlgorithmLibrary/DFS.js"> </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
@@ -1204,7 +1204,7 @@
 <body onload="init();" class="VisualizationMainPage">
     <div class="stack_container">
         <div class="buttons">
-            <a href="index.html" class="tabs" onclick="openListOfExp()">Home</a>
+            <a href="../index.html" class="tabs" onclick="openListOfExp()">Home</a>
             <button id="theorybtn1" class="tabs" onclick="openTheory()">Theory</button>
             <button id="codebtn2" class="tabs" onclick="openCode()">Code</button>
             <button id="visualbtn3" class="tabs" onclick="openVisualisation()">Visualisation</button>
@@ -1212,122 +1212,24 @@
 
         <!-- Theory -->
 <div id="theory" class="stack_content">
-        <h3 class="heading1">Binary Search Tree (BST)</h3>
-    <p class="para">
-        In a binary search tree, all the nodes in the left sub-tree have a value less than that of the root
-        node. Correspondingly, all the nodes in the right sub-tree have a value either equal to or greater
-        than the root node. The same rule is applicable to every sub-tree in the tree. (Note that a binary
-        search tree may or may not contain duplicate values, depending on its implementation.) <br>
-        <img src="dsa_virtual_image/bstimg1.png" alt="bst image" class="bstimg"><br>
-        To summarize, a binary search tree is a binary tree with the following properties: <br>
-        • The left sub-tree of a node N contains values that are less than N’s value. <br>
-        • The right sub-tree of a node N contains values that are greater than N’s value. <br>
-        • Both the left and the right binary trees also satisfy these properties and, thus, are binary
-        search trees. <br>
-</p>
-<h2 class="heading1">Operations  on Binary Search Tree:</h2>
-<p class="para">•<b>Searching for a Node in a Binary Search Tree</b>
-    <p class="para">
-        • The search function is used to find whether a given value is present in the tree or not.
-        The searching process begins at the root node. The function first checks if the binary
-        search tree is empty. If it is empty, then the value we are searching for is not present
-        in the tree. So, the search algorithm terminates by displaying an appropriate message. <br>
-        • However, if there are nodes in the tree, then the search function checks to see if the
-key value of the current node is equal to the value to be searched. If not, it checks if
-the value to be searched for is less than the value of the current node, in which case it
-should be recursively called on the left child node. In case the value is greater than
-the value of the current node, it should be recursively called on the right child node. <br>
-        <img src="dsa_virtual_image/bstimg2.png" alt="bst image" class="bstimg">
+        <h3 class="heading1">Depth First Search (DFS)</h3>
+        <p class="para">
+            Two states of vertex: <b>initial</b> and <b>visited</b> <br>
+            Initially all vertices are at initial state, when vertex will be popped from stack its state will
+            change to visited. <br>
     </p>
-    <p class="para">• <b>Inserting a New Node in a Binary Search Tree</b> <br>
-        The insert function is used to add a new node with a given value at the correct position in the
-        binary search tree. Adding the node at the correct position means that the new node should
-        not violate the properties of the binary search tree. The initial code for the insert function is
-        similar to the search function. This is because we first find the correct position where the
-        insertion has to be done and then add the node at that position. The insertion function
-        changes the structure of the tree. Therefore, when the insert function is called recursively, the
-        function should return the new tree pointer. <br>
-        • In Step 1 of the algorithm, the insert function checks if the current node of TREE is
-NULL. If it is NULL, the algorithm simply adds the node, else it looks at the current
-node’s value and then recurs down the left or right sub-tree. <br>
-• If the current node’s value is less than that of the new node, then the right sub-tree is
-traversed, else the left sub-tree is traversed. The insert function continues moving
-down the levels of a binary tree until it reaches a leaf node. The new node is added by
-following the rules of the binary search trees. That is, if the new node’s value is
-greater than that of the parent node, the new node is inserted in the right sub-tree, else
-it is inserted in the left sub-tree. <br>
-• The insert function requires time proportional to the height of the tree in the worst
-case. It takes O(log n) time to execute in the average case and O(n) time in the worst
-case. <br>
-<img src="dsa_virtual_image/bstimg3.png" alt="bst image" class="bstimg"> <br>
-    </p>
-    <p class="para">• <b> Deleting a Node from a Binary Search Tree</b> <br>
-        The delete function deletes a node from the binary search tree. However, utmost care should
-be taken that the properties of the binary search tree are not violated and nodes are not lost in
-the process. We will take up three cases in this section and discuss how a node is deleted
-from a binary search tree.<br>
-         &nbsp; &nbsp;  •Case 1: Deleting a Node that has No Children <br>
-          <img src="dsa_virtual_image/bstimg4.png" alt="bst image" class="bstimg"> <br>
-         &nbsp; &nbsp;   • Case 2: Deleting a Node with One Child <br>
-          <img src="dsa_virtual_image/bstimg5.png" alt="bst image" class="bstimg"> <br>
-         &nbsp; &nbsp;   • Case 3: Deleting a Node with Two Children<br>
-         <img src="dsa_virtual_image/bstimg6.png" alt="bst image" class="bstimg"> <br>   
-    </p>
-    <p class="para">• <b> Traversing a Binary Tree.</b> <br>
-        Traversing a binary tree is the process of visiting each node in the tree exactly once in a
-systematic way. Unlike linear data structures in which the elements are traversed
-sequentially, tree is a nonlinear data structure in which the elements can be traversed in many
-different ways. There are different algorithms for tree traversals. These algorithms differ in
-the order in which the nodes are visited.<br>
-<img src="dsa_virtual_image/bstimg7.png" alt="bst image" height="" width=""> <br>
-         &nbsp; &nbsp; <b> a. Pre-order Traversal</b><br>
-         &nbsp; &nbsp; <p class="para">To traverse a non-empty binary tree in pre-order, the following operations are
-            performed recursively at each node. <br>
-            The algorithm works by: <br>
-            1. Visiting the root node. <br>
-            2. Traversing the left sub-tree. <br>
-            3. Traversing the right sub-tree. <br>
-            In the above figure, the pre-order traversal of the tree is given as A, B, C. Root node
-            first, the left sub-tree next, and then the right sub-tree. Pre-order traversal is also
-            called as depth-first traversal. In this algorithm, the left sub-tree is always traversed
-            before the right sub-tree. The word ‘pre’ in the pre-order specifies that the root node
-            is accessed prior to any other nodes in the left and right sub-trees. Pre-order algorithm
-            is also known as the NLR traversal algorithm (Node-Left-Right).
+    <p class="para">•<b>Procedure:</b>
+        <p class="para">
+            Initially stack is empty, and all vertices are in initial state:<br>
+            &nbsp; &nbsp;  1. Push starting vertex on the stack  <br>
+            &nbsp; &nbsp;   2. Pop a vertex from stack <br>
+            &nbsp; &nbsp; 3. If popped vertex is in initial state, visit it and change its state to visited . Push all
+            unvisited vertices adjacent to the popped vertex. <br>
+            &nbsp; &nbsp;   4. Repeat steps 2 &3 until stack is empty. <br>
+            There is no restriction on the order in which the successors of a vertex are visited and so we
+    can push the successor of a vertex in any order. <br>
+    <img src="../dsa_virtual_image/dfsimg1.png" alt="dfsimg" class="dfsimg"> <br>
         </p>
-        &nbsp; &nbsp; <b> b. In-order Traversal</b> <br>
-        &nbsp; &nbsp; <p class="para">Here, all the elements with a value lower than a given value are accessed before the
-            elements with a higher value. To traverse a non-empty binary tree in in-order, the
-            following operations are performed recursively at each node. <br>
-            The algorithm works by: <br>
-            1. Traversing the left sub-tree. <br>
-            2. Visiting the root node. <br>
-            3. Traversing the right sub-tree. <br>
-            In the above figure, the in-order traversal of the tree is given as B, A, and C. Left sub-
-            tree first, the root node next, and then the right sub-tree. In-order traversal is also
-            
-            called as symmetric traversal. In this algorithm, the left sub-tree is always traversed
-            before the root node and the right sub-tree. The word ‘in’ in the in-order specifies that
-            the root node is accessed in between the left and the right sub-trees. In-order
-            algorithm is also known as the LNR traversal algorithm (Left-Node-Right).
-       </p>
-       &nbsp; &nbsp; <b> c. Post-order Traversal</b><br>
-       &nbsp; &nbsp; <p class="para">Post-order traversals are used to extract postfix notation from an expression tree. To
-        traverse a non-empty binary tree in post-order, the following operations are
-        performed recursively at each node. <br>
-          The algorithm works by: <br>
-          1. Traversing the left sub-tree. <br>
-          2. Traversing the right sub-tree. <br>
-          3. Visiting the root node. <br>
-In the above figure, the post-order traversal of the tree is given as B, C, and A. Left
-sub-tree first, the right sub-tree next, and finally the root node. In this algorithm, the
-left sub-tree is always traversed before the right sub-tree and the root node. The word
-‘post’ in the post-order specifies that the root node is accessed after the left and the
-right sub-trees. Post-order algorithm is also known as the LRN traversal algorithm
-(Left-Right-Node).
-      </p>
-</p>
-    </p>
-
 </div>
 
 <!-- Code -->
@@ -1336,216 +1238,117 @@ right sub-trees. Post-order algorithm is also known as the LRN traversal algorit
     <code id="code" class="language-c">
         
         #include&lt;stdio.h&gt;
-        #include&lt;stdlib.h&gt;
-        struct node
-        {
-        struct node *lchild;
-        int info;
-        struct node *rchild;
-        };
-        struct node *search(struct node *ptr, int skey);
-        struct node *insert(struct node *ptr, int ikey);
-        struct node *del(struct node *ptr, int dkey);
-        struct node *Min(struct node *ptr);
-        struct node *Max(struct node *ptr);
-        int height(struct node *ptr);
-        void preorder(struct node *ptr);
-        void inorder(struct node *ptr);
-        void postorder(struct node *ptr);
-        main( )
-        {
-        struct node *root=NULL,*ptr;
-        int choice,k;
-        while(1)
-        {
-        printf("\n");
-        printf("1.Search\n");
-        printf("2.Insert\n");
-        printf("3.Delete\n");
-        printf("4.Preorder Traversal\n");
-        printf("5.Inorder Traversal\n");
-        printf("6.Postorder Traversal\n");
-        printf("7.Height of tree\n");
-        printf("8.Find minimum and maximum\n");
-        printf("9.Quit\n");
-        
-        printf("Enter your choice : ");
-        scanf("%d",&choice);
-        switch(choice)
-        {
-        case 1:
-        printf("Enter the key to be searched : ");
-        scanf("%d",&k);
-        ptr = search(root, k);
-        if(ptr!=NULL)
-        printf("Key found\n");
-        break;
-        case 2:
-        printf("Enter the key to be inserted : ");
-        scanf("%d",&k);
-        root = insert(root, k);
-        break;
-        case 3:
-        printf("Enter the key to be deleted : ");
-        scanf("%d",&k);
-        root = del(root,k);
-        break;
-        case 4:
-        preorder(root);
-        break;
-        case 5:
-        inorder(root);
-        break;
-        case 6:
-        postorder(root);
-        break;
-        case 7:
-        printf("Height of tree is %d\n", height(root));
-        break;
-        case 8:
-        ptr = Min(root);
-        if(ptr!=NULL)
-        printf("Minimum key is %d\n", ptr->info );
-        ptr = Max(root);
-        if(ptr!=NULL)
-        printf("Maximum key is %d\n", ptr->info );
-        break;
-        case 9:
-        exit(1);
-        default:
-        printf("Wrong choice\n");
-        }/*End of switch */
-        }/*End of while */
-        }/*End of main( )*/
-        
-        struct node *search(struct node *ptr, int skey)
-        {
-        if(ptr==NULL)
-        {
-        printf("key not found\n");
-        return NULL;
-        }
-        else if(skey < ptr->info)/*search in left subtree*/
-        return search(ptr->lchild, skey);
-        else if(skey > ptr->info)/*search in right subtree*/
-        return search(ptr->rchild, skey);
-        else /*skey found*/
-        return ptr;
-        }/*End of search()*/
-        struct node *insert(struct node *ptr, int ikey )
-        {
-        if(ptr==NULL)
-        {
-        ptr = (struct node *) malloc(sizeof(struct node));
-        ptr->info = ikey;
-        ptr->lchild = NULL;
-        ptr->rchild = NULL;
-        }
-        else if(ikey < ptr->info) /*Insertion in left subtree*/
-        ptr->lchild = insert(ptr->lchild, ikey);
-        else if(ikey > ptr->info) /*Insertion in right subtree */
-        ptr->rchild = insert(ptr->rchild, ikey);
-        else
-        printf("Duplicate key\n");
-        return ptr;
-        }/*End of insert( )*/
-        struct node *del(struct node *ptr, int dkey)
-        {
-        struct node *tmp, *succ;
-        if( ptr == NULL)
-        {
-        printf("dkey not found\n");
-        return(ptr);
-        }
-        if( dkey < ptr->info )/*delete from left subtree*/
-        ptr->lchild = del(ptr->lchild, dkey);
-        else if( dkey > ptr->info )/*delete from right subtree*/
-        ptr->rchild = del(ptr->rchild, dkey);
-        else
-        {
-        
-        /*key to be deleted is found*/
-        if( ptr->lchild!=NULL && ptr->rchild!=NULL ) /*2 children*/
-        {
-        succ=ptr->rchild;
-        while(succ->lchild)
-        succ=succ->lchild;
-        ptr->info=succ->info;
-        ptr->rchild = del(ptr->rchild, succ->info);
-        }
-        else
-        {
-        tmp = ptr;
-        if( ptr->lchild != NULL ) /*only left child*/
-        ptr = ptr->lchild;
-        else if( ptr->rchild != NULL) /*only right child*/
-        ptr = ptr->rchild;
-        else /* no child */
-        ptr = NULL;
-        free(tmp);
-        }
-        }
-        return ptr;
-        }/*End of del( )*/
-        struct node *Min(struct node *ptr)
-        {
-        if(ptr==NULL)
-        return NULL;
-        else if(ptr->lchild==NULL)
-        return ptr;
-        else
-        return Min(ptr->lchild);
-        
-        }/*End of min()*/
-        struct node *Max(struct node *ptr)
-        {
-        if(ptr==NULL)
-        return NULL;
-        else if(ptr->rchild==NULL)
-        return ptr;
-        else
-        return Max(ptr->rchild);
-        
-        }/*End of max()*/
-        void preorder(struct node *ptr)
-        {
-        if(ptr == NULL ) /*Base Case*/
-        return;
-        printf("%d ",ptr->info);
-        
-        preorder(ptr->lchild);
-        preorder(ptr->rchild);
-        }/*End of preorder( )*/
-        void inorder(struct node *ptr)
-        {
-        if(ptr == NULL )/*Base Case*/
-        return;
-        inorder(ptr->lchild);
-        printf("%d ",ptr->info);
-        inorder(ptr->rchild);
-        }/*End of inorder( )*/
-        void postorder(struct node *ptr)
-        {
-        if(ptr == NULL )/*Base Case*/
-        return;
-        postorder(ptr->lchild);
-        postorder(ptr->rchild);
-        printf("%d ",ptr->info);
-        }/*End of postorder( )*/
-        int height(struct node *ptr)
-        {
-        int h_left, h_right;
-        if (ptr == NULL) /*Base Case*/
-        return 0;
-        h_left = height(ptr->lchild);
-        h_right = height(ptr->rchild);
-        if (h_left > h_right)
-        return 1 + h_left;
-        else
-        return 1 + h_right;
-        
-        }/*End of height()*/
+#include&lt;stdlib.h&gt;
+#define MAX 100
+#define initial 1
+#define visited 2
+int n; /*Number of vertices in the graph*/
+int adj[MAX][MAX]; /*Adjacency Matrix*/
+int state[MAX]; /*Can be initial or visited*/
+void DF_Traversal();
+void DFS(int v);
+void create_graph();
+int stack[MAX];
+int top = -1;
+void push(int v);
+int pop();
+int isEmpty_stack();
+main()
+{
+create_graph();
+DF_Traversal();
+}/*End of main()*/
+void DF_Traversal()
+{
+int v;
+for(v=0; v<n; v++)
+state[v] = initial;
+printf("Enter starting vertex for Depth First Search : ");
 
+scanf("%d",&v);
+DFS(v);
+for(v=0; v<n; v++)
+{
+if(state[v] == initial)
+DFS(v);
+
+}
+printf("\n");
+}/*End of DF_Traversal( )*/
+void DFS(int v)
+{
+int i;
+push(v);
+while(!isEmpty_stack())
+{
+v = pop();
+if(state[v]==initial)
+{
+printf("%d ",v);
+state[v] = visited;
+}
+for(i=n-1; i>=0; i--)
+if(adj[v][i]==1 && state[i]==initial)
+push(i);
+
+}
+}/*End of DFS( )*/
+void push(int v)
+{
+if(top == (MAX-1))
+{
+printf("Stack Overflow\n");
+return;
+}
+top = top+1;
+stack[top] = v;
+}/*End of push()*/
+int pop()
+{
+int v;
+if(top == -1)
+{
+printf("Stack Underflow\n");
+exit(1);
+}
+else
+
+{
+v = stack[top];
+top = top-1;
+return v;
+}
+}/*End of pop()*/
+int isEmpty_stack( )
+{
+if( top == -1)
+return 1;
+else
+return 0;
+}/*End if isEmpty_stack()*/
+void create_graph()
+{
+int i,max_edges,origin,destin;
+printf("Enter number of vertices : ");
+scanf("%d",&n);
+max_edges = n*(n-1);
+for(i=1;i<=max_edges;i++)
+{
+printf("Enter edge %d( -1 -1 to quit ) : ",i);
+scanf("%d %d",&origin,&destin);
+if((origin == -1) && (destin == -1))
+break;
+if(origin >= n || destin >= n || origin<0 || destin<0)
+{
+printf("Invalid edge!\n");
+i--;
+}
+else
+{
+adj[origin][destin] = 1;
+}
+}
+}/*End of create_graph*/
 </code>
 </pre>
 
@@ -1556,8 +1359,8 @@ right sub-trees. Post-order algorithm is also known as the LRN traversal algorit
 
         <div id="container">
     
-                <div id="header">  
-                  <h1>Binary Search Tree</h1>
+                <div id="header">
+                  <h1>Depth-First Search</h1>
                 </div>
                 
                 <div id="mainContent"> 
@@ -1566,19 +1369,20 @@ right sub-trees. Post-order algorithm is also known as the LRN traversal algorit
                     <!-- Table for buttons to control specific animation (insert/find/etc) -->
                     <!-- (filled in by javascript code specific to the animtion) -->
                     <table id="AlgorithmSpecificControls"> 
-                        <!-- <td><input type="Text" value="" size="4" fdprocessedid="m5qpwm"></td><td><input type="Button" value="Insert" fdprocessedid="i1qun7"></td><td><input type="Text" value="" size="4" fdprocessedid="na938a"></td><td><input type="Button" value="Delete" fdprocessedid="xtufhp"></td><td><input type="Text" value="" size="4" fdprocessedid="j3axq"></td><td><input type="Button" value="Find" fdprocessedid="1v4s2k"></td><td><input type="Button" value="Print" fdprocessedid="6o6k2n"></td> -->
-                    </table> 
+                        <!-- <td>Start Vertex: </td><td><input type="Text" value="" size="2" fdprocessedid="qp5ea"></td><td><input type="Button" value="Run DFS" fdprocessedid="sz3mqj"></td><td><input type="Button" value="New Graph" fdprocessedid="t74c1l"></td><td><table><tr><td><input type="radio" name="GraphType" value="Directed Graph"> Directed Graph</td></tr><tr><td><input type="radio" name="GraphType" value="Undirected Graph"> Undirected Graph</td></tr></table></td><td><table><tr><td><input type="radio" name="GraphSize" value="Small Graph"> Small Graph</td></tr><tr><td><input type="radio" name="GraphSize" value="Large Graph"> Large Graph</td></tr></table></td><td><table><tr><td><input type="radio" name="GraphRepresentation" value="Logical Representation"> Logical Representation</td></tr><tr><td><input type="radio" name="GraphRepresentation" value="Adjacency List Representation"> Adjacency List Representation</td></tr><tr><td><input type="radio" name="GraphRepresentation" value="Adjacency Matrix Representation"> Adjacency Matrix Representation</td></tr></table></td> -->
+                </table> 
                   </div>
                   
                     <!-- Drawing canvas where all animation is done.  Note:  can be resized in code -->
                             
-                  <canvas id="canvas" width="800" height="500"></canvas>
+                  <canvas id="canvas" width="1000" height="500"></canvas>
+                  
                   <div id="generalAnimationControlSection">
                     <!-- Table for buttons to control general animation (play/pause/undo/etc) ->
-                     (filled in by javascript code, specifically AnimationMain.js)  -->
+                    <!-- (filled in by javascript code, specifically AnimationMain.js)  -->
             
                     <table id="GeneralAnimationControls">  
-                        <!-- <td><input type="Button" value="Skip Back" disabled=""></td><td><input type="Button" value="Step Back" disabled=""></td><td><input type="Button" value="Pause" fdprocessedid="sp2wht"></td><td><input type="Button" value="Step Forward" disabled=""></td><td><input type="Button" value="Skip Forward" disabled=""></td><td><table><tr><td><div display="inline-block" float="left" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width:200px"><a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 75%;"></a></div></td></tr><tr><td align="center">Animation Speed</td></tr></table></td><td> w:</td><td><input type="Text" value="1000" size="4" fdprocessedid="fl0r46"></td><td>       h:</td><td><input type="Text" value="500" size="4" fdprocessedid="617an"></td><td><input type="Button" value="Change Canvas Size" fdprocessedid="r8d58s"></td><td><input type="Button" value="Move Controls" fdprocessedid="kcl5bh"></td> -->
+                        <!-- <td><input type="Button" value="Skip Back" disabled=""></td><td><input type="Button" value="Step Back" disabled=""></td><td><input type="Button" value="Pause" fdprocessedid="6mg6sx"></td><td><input type="Button" value="Step Forward" disabled=""></td><td><input type="Button" value="Skip Forward" disabled=""></td><td><table><tr><td><div display="inline-block" float="left" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width:200px"><a href="#" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 75%;"></a></div></td></tr><tr><td align="center">Animation Speed</td></tr></table></td><td> w:</td><td><input type="Text" value="1000" size="4" fdprocessedid="saktki"></td><td>       h:</td><td><input type="Text" value="500" size="4" fdprocessedid="6b4yq8"></td><td><input type="Button" value="Change Canvas Size" fdprocessedid="30o17r"></td><td><input type="Button" value="Move Controls" fdprocessedid="g3nxbj"></td> -->
                     </table>		
                   </div>
                   
@@ -1589,35 +1393,37 @@ right sub-trees. Post-order algorithm is also known as the LRN traversal algorit
                 </div>
             
               </div><!-- container -->
+            
 </div>
     
     
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
     <script src="prism.js"></script>
-    <script src="ThirdParty/jquery-1.5.2.min.js"></script>
-  <script src="ThirdParty/jquery-ui-1.8.11.custom.min.js"></script>
+    <script src="../ThirdParty/jquery-1.5.2.min.js"></script>
+  <script src="../ThirdParty/jquery-ui-1.8.11.custom.min.js"></script>
   
 
       
   <!-- Javascript for the actual visualization code -->
-  <script type="text/javascript" src="AnimationLibrary/CustomEvents.js"> </script>
-  <script type="text/javascript" src="AnimationLibrary/UndoFunctions.js"> </script>
-  <script type="text/javascript" src="AnimationLibrary/AnimatedObject.js"> </script>
-  <script type="text/javascript" src="AnimationLibrary/AnimatedLabel.js"> </script>
-  <script type="text/javascript" src="AnimationLibrary/AnimatedCircle.js"> </script>
-  <script type="text/javascript" src="AnimationLibrary/AnimatedRectangle.js"> </script>
-  <script type="text/javascript" src="AnimationLibrary/AnimatedLinkedList.js"> </script>
-  <script type="text/javascript" src="AnimationLibrary/HighlightCircle.js"> </script>
-  <script type="text/javascript" src="AnimationLibrary/Line.js"> </script>
-  <script type="text/javascript" src="AnimationLibrary/ObjectManager.js"> </script>
-  <script type="text/javascript" src="AnimationLibrary/AnimationMain.js"> </script>
+  <script type="text/javascript" src="../AnimationLibrary/CustomEvents.js"> </script>
+  <script type="text/javascript" src="../AnimationLibrary/UndoFunctions.js"> </script>
+  <script type="text/javascript" src="../AnimationLibrary/AnimatedObject.js"> </script>
+  <script type="text/javascript" src="../AnimationLibrary/AnimatedLabel.js"> </script>
+  <script type="text/javascript" src="../AnimationLibrary/AnimatedCircle.js"> </script>
+  <script type="text/javascript" src="../AnimationLibrary/AnimatedRectangle.js"> </script>
+  <script type="text/javascript" src="../AnimationLibrary/AnimatedLinkedList.js"> </script>
+  <script type="text/javascript" src="../AnimationLibrary/HighlightCircle.js"> </script>
+  <script type="text/javascript" src="../AnimationLibrary/Line.js"> </script>
+  <script type="text/javascript" src="../AnimationLibrary/ObjectManager.js"> </script>
+  <script type="text/javascript" src="../AnimationLibrary/AnimationMain.js"> </script>
 
-  <script type="text/javascript" src="AlgorithmLibrary/Algorithm.js"> </script>
-  <script type="text/javascript" src="AlgorithmLibrary/BST.js"> </script>
+  <script type="text/javascript" src="../AlgorithmLibrary/Graph.js"> </script>
+  <script type="text/javascript" src="../AlgorithmLibrary/Algorithm.js"> </script>
+  <script type="text/javascript" src="../AlgorithmLibrary/DFS.js"> </script>
    <!-- jqueury stuff.  Only used for the animation speed slider. -->
-   <link rel="stylesheet" href="ThirdParty/jquery-ui-1.8.11.custom.css">
-   <script src="ThirdParty/jquery-1.5.2.min.js"></script>
-   <script src="ThirdParty/jquery-ui-1.8.11.custom.min.js"></script>
+   <link rel="stylesheet" href="../ThirdParty/jquery-ui-1.8.11.custom.css">
+   <script src="../ThirdParty/jquery-1.5.2.min.js"></script>
+   <script src="../ThirdParty/jquery-ui-1.8.11.custom.min.js"></script>
 </body>
 
 </html>
