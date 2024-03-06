@@ -124,13 +124,23 @@ body {
     margin-left: -50px;
 }
 
-.cardset1 :hover {
-    box-shadow: #ccc;
-    opacity: 0.5;
-    border-radius: 20px;
-    /* border: 2px solid black ; */
+.cardset1 img:hover {
+    /* box-shadow: 5px 5px 10px grey; */
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid rgb(189, 189, 189);
+    /* border-radius: 10px; */
+    /* padding: 5px; */
+    animation:moveUp 0.2s forwards ;
+    
 }
-
+@keyframes moveUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
 /* Practise Portion  */
 #study_material {
     margin-top: 10px;
