@@ -31,6 +31,9 @@ body {
     display: flex;
     gap: 0.5rem;
     font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .tabs {
@@ -41,11 +44,12 @@ body {
     color: black;
     font-size: 16px;
     text-decoration: none;
+    font-weight: 700;
 }
 
 .tabs:hover {
-    color: red;
-    cursor:pointer;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 #introduction {
@@ -128,20 +132,23 @@ body {
 .cardset1 img:hover {
     /* box-shadow: 5px 5px 10px grey; */
     background-color: rgba(0, 0, 0, 0.1);
-    border: 2px solid rgb(189, 189, 189);
+    border: 2px solid #dddada;
     border-radius: 5px;
     padding: 2px;
-    animation:moveUp 0.2s forwards ;
-    
+    animation: moveUp 0.2s forwards;
+
 }
+
 @keyframes moveUp {
     0% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
+
     100% {
-      transform: translateY(-10px);
+        transform: translateY(-8px);
     }
-  }
+}
+
 /* Practise Portion  */
 #study_material {
     margin-top: 10px;
@@ -150,7 +157,13 @@ body {
 #study_material p {
     font-size: 12px;
 }
-
+.practisebtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .practise_content {
     color: rgb(80, 80, 80);
     position: absolute;
@@ -160,16 +173,15 @@ body {
 }
 
 #array_content {
-    /* margin-top: 10px; */
     transform: translateX(5px);
     padding: 10px;
     justify-content: left;
-    /* display: flex;  */
 }
 
 .questions {
     margin-left: -10px;
 }
+
 /* Feedback Portion */
 #feedback {
     margin-top: 10px;
@@ -178,10 +190,10 @@ body {
 #feedback p {
     font-size: 12px;
 }
-
+/* 
 #btn1 {
-    color: red;
-}
+    color: black;
+} */
 
 input[type=text],
 select {
@@ -330,3 +342,7 @@ input[type=submit]:hover {
     width: 30vw;
     margin-left: 23vw;
 }
+
+/* .{
+    color: #dddada;
+} */
