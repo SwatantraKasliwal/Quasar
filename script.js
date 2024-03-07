@@ -466,17 +466,67 @@ function openBitManipulation(){
     qbtn8.style.color = "black";
     qbtn9.style.color = "black";
 }
+
+
+
+
+
+
+// Feedback section starts here:
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzNvs64fbILWWr_DBIvkSF6gQxaz2fWoBWlStF5e05yIn-NCkI9Arnz_Wc0q160t7Ly6Q/exec'
             const form = document.forms['google-sheet']
           
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .then(response => alert("Thank You For your valueable feedback "))
                 .catch(error => console.error('Error!', error.message))
+                form.reset();
             })
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
 // <script>
 //             const scriptURL = 'https://script.google.com/macros/s/AKfycbzNvs64fbILWWr_DBIvkSF6gQxaz2fWoBWlStF5e05yIn-NCkI9Arnz_Wc0q160t7Ly6Q/exec'
 //             const form = document.forms['google-sheet']

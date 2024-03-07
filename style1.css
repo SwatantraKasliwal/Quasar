@@ -45,6 +45,7 @@ body {
 
 .tabs:hover {
     color: red;
+    cursor:pointer;
 }
 
 #introduction {
@@ -128,8 +129,8 @@ body {
     /* box-shadow: 5px 5px 10px grey; */
     background-color: rgba(0, 0, 0, 0.1);
     border: 2px solid rgb(189, 189, 189);
-    /* border-radius: 10px; */
-    /* padding: 5px; */
+    border-radius: 5px;
+    padding: 2px;
     animation:moveUp 0.2s forwards ;
     
 }
