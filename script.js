@@ -68,7 +68,7 @@ function openLanguages(){
     btn4.style.borderBottom = "none";
 }
 function openFeedback(){
-    feed.style.transform  = "translateX(10px)";
+    feed.style.transform  = "translateX(250px)";
     loe.style.transform  = "translateX(2000%)";
     lang.style.transform  = "translateX(2000%)";
     sm.style.transform  = "translateX(2000%)";
@@ -122,7 +122,6 @@ function openVisualisation(){
 
 let ids = ['array_content', 'string_content', 'linkedlist_content', 'stackandqueue_content', 'tree_content', 'trie_content', 'heap_content', 'graph_content', 'dynamic_content', 'bitmanipulation_content'];
 let buttons = ['qbtn0','qbtn1','qbtn2','qbtn3','qbtn4','qbtn5','qbtn6','qbtn7','qbtn8','qbtn9']
-
 function openArray(){
 for (let i = 0; i < ids.length && i<buttons.length; i++) {
     let element = document.getElementById(ids[i]);
@@ -130,7 +129,7 @@ for (let i = 0; i < ids.length && i<buttons.length; i++) {
     
     if (i === 0) {
         // Apply specific styles to the first element
-        element.style.transform = "translateX(5px)";
+        element.style.transform = "translateX(250px)";
         element.style.transitionDelay = "0.3s";
         btn.style.borderBottom = " 2px solid #dddada";
     } else {
@@ -150,7 +149,7 @@ function openString(){
         
         if (i === 1) {
             // Apply specific styles to the first element
-            element.style.transform = "translateX(5px)";
+            element.style.transform = "translateX(250px)";
             element.style.transitionDelay = "0.3s";
             btn.style.borderBottom = " 2px solid #dddada";
         } else {
@@ -168,7 +167,7 @@ function openLinkedList(){
         
         if (i === 2) {
             // Apply specific styles to the first element
-            element.style.transform = "translateX(5px)";
+            element.style.transform = "translateX(250px)";
             element.style.transitionDelay = "0.3s";
             btn.style.borderBottom = " 2px solid #dddada";
         } else {
@@ -186,7 +185,7 @@ function openStackQueue(){
         
         if (i === 3) {
             // Apply specific styles to the first element
-            element.style.transform = "translateX(5px)";
+            element.style.transform = "translateX(250px)";
             element.style.transitionDelay = "0.3s";
             btn.style.borderBottom = " 2px solid #dddada";
         } else {
@@ -204,7 +203,7 @@ function openTrees(){
         
         if (i === 4) {
             // Apply specific styles to the first element
-            element.style.transform = "translateX(5px)";
+            element.style.transform = "translateX(250px)";
             element.style.transitionDelay = "0.3s";
             btn.style.borderBottom = " 2px solid #dddada";
         } else {
@@ -222,7 +221,7 @@ function openTrie(){
         
         if (i === 5) {
             // Apply specific styles to the first element
-            element.style.transform = "translateX(5px)";
+            element.style.transform = "translateX(250px)";
             element.style.transitionDelay = "0.3s";
             btn.style.borderBottom = " 2px solid #dddada";
         } else {
@@ -240,7 +239,7 @@ function openHeap(){
         
         if (i === 6) {
             // Apply specific styles to the first element
-            element.style.transform = "translateX(5px)";
+            element.style.transform = "translateX(250px)";
             element.style.transitionDelay = "0.3s";
             btn.style.borderBottom = " 2px solid #dddada";
         } else {
@@ -258,7 +257,7 @@ function openGraph(){
         
         if (i === 7) {
             // Apply specific styles to the first element
-            element.style.transform = "translateX(5px)";
+            element.style.transform = "translateX(250px)";
             element.style.transitionDelay = "0.3s";
             btn.style.borderBottom = " 2px solid #dddada";
         } else {
@@ -276,7 +275,7 @@ function openDynamicProgramming(){
         
         if (i === 8) {
             // Apply specific styles to the first element
-            element.style.transform = "translateX(5px)";
+            element.style.transform = "translateX(250px)";
             element.style.transitionDelay = "0.3s";
             btn.style.borderBottom = " 2px solid #dddada";
         } else {
@@ -294,7 +293,7 @@ function openBitManipulation(){
         
         if (i === 9) {
             // Apply specific styles to the first element
-            element.style.transform = "translateX(5px)";
+            element.style.transform = "translateX(250px)";
             element.style.transitionDelay = "0.3s";
             btn.style.borderBottom = " 2px solid #dddada";
         } else {
